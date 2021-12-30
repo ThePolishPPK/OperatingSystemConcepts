@@ -2,7 +2,7 @@ if ! command -v pandoc &> /dev/null; then
 	echo "PANDOC command missing in system!"
 	exit 1
 else
-	documents=("Procesy" "Wątki" "Synchronizacja procesów")
+	documents=("Procesy" "Wątki" "Synchronizacja procesów" "Kolejkowanie przez procesor")
 	
 	for document in "${documents[@]}"; do
 		if [ -r "$document.md" ]; then
